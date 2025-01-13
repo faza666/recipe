@@ -1,5 +1,5 @@
 """
-URL mapping for the recioe app
+URL mapping for the recipe app
 """
 
 from django.urls import path, include

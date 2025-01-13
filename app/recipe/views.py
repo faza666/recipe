@@ -1,5 +1,5 @@
 """
-Vies for resipe APIs
+Vies for the recipe APIs
 """
 
 from rest_framework import viewsets
@@ -17,5 +17,5 @@ class RecipeViewSet(viewsets.ModelViewSet):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
-    def getqueryset(self):
+    def get_queryset(self):
         return self.queryset.filter(user=self.request.user).order_by('-id')
