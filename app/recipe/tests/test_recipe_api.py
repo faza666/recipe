@@ -18,6 +18,7 @@ from recipe.serializers import RecipeSerializer
 
 RECIPE_URL = reverse('recipe:recipe-list')
 
+
 def create_recipe(user, **params):
     defaults = {
         'title': 'Sample recipe Title',
